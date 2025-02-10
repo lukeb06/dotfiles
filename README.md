@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
- > stow: `brew install stow` (or your preferred package manager)
+ > [GNU Stow](https://www.gnu.org/software/stow/): `brew install stow` (or your preferred package manager)
 
 ## Install
 
