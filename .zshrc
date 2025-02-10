@@ -34,7 +34,7 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
-source ~/.functions.zsh
+source ~/.zshconfig/main.zsh
 
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
@@ -45,5 +45,5 @@ export ZSH="$HOME/.oh-my-zsh"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-source ~/.theme.zsh
-source ~/.path.zsh
+source ~/.zshconfig/theme.zsh
+source ~/.zshconfig/path.zsh
