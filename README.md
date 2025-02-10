@@ -1,7 +1,9 @@
 # Luke Barrier Dotfiles
 
 ## Prerequisites
+
 ### MacOS
+
 ```bash
 brew install stow
 ```
@@ -9,16 +11,19 @@ brew install stow
 ### Linux
 
 #### Debian
+
 ```bash
 sudo apt-get install stow
 ```
 
 #### Arch
+
 ```bash
 sudo pacman -S stow
 ```
 
 ## Install
+
 ```bash
-cd ~ && gh repo clone dotfiles && cd dotfiles && chmod +x stow.sh && ./stow.sh && cd ~ && zsh
+git clone https://github.com/lukebarrier/dotfiles ~/dotfiles --depth=1 && ~/dotfiles/stow.sh && zsh -c "clear"
 ```
