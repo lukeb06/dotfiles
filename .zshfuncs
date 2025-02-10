@@ -1,0 +1,141 @@
+alias vim='nvim'
+alias vimc='nvim ~/.config/nvim'
+alias v='nvim'
+
+source ~/.private/con.zsh
+
+###############################################################################
+############################### Tmuxifier Start ###############################
+###############################################################################
+
+source ~/.zshutil
+
+alias tmuxs='tmuxifier s'
+alias tmuxls='tmuxifier ls'
+alias tmuxes='tmuxifier es'
+
+function fzf_sessions
+{
+    previewer=${1:-"preview_session {}"}
+    tmuxls | fzf --preview="source ~/.zshutil && $previewer"
+}
+
+alias fzf_sessions_config='fzf_sessions "preview_session_config {}"'
+
+alias tmuxl='tmuxs $(fzf_sessions)'
+alias tmuxe='tmuxes $(fzf_sessions_config)'
+
+alias sl='tmuxl'
+alias se='tmuxe'
+
+function tmuxc
+{
+    cp ~/.tmuxifier/layouts/base.session.sh ~/.tmuxifier/layouts/$1.session.sh && vim ~/.tmuxifier/layouts/$1.session.sh
+}
+
+function seshs
+{
+    sesh connect $(sesh list | fzf)
+}
+
+
+function sls
+{
+    content1=$(tmux ls)
+    content2=$(tmuxls)
+    content3=$(zoxide query -l)
+    echo "$content1\n$content2\n$content3"
+}
+
+function slsfzf
+{
+    content1='[sesh]'
+    content2=$(tmuxls)
+
+    echo "$content1\n$content2" | fzf --preview="source ~/.zshutil && preview_session {}"
+}
+
+function ss
+{
+    option=$(slsfzf)
+    if [[ $option == "[sesh]" ]]; then
+        seshs
+    else
+        tmuxs $option
+    fi
+}
+
+
+###############################################################################
+################################ Tmuxifier End ################################
+###############################################################################
+
+alias ls='ls --color'
+
+alias tpull='git checkout master && shopify theme pull --live'
+alias tpush='shopify theme push --live'
+
+###############################################################################
+################################## Git Start ##################################
+###############################################################################
+
+function gadd
+{
+    target=${1:-"."}
+    git add $target
+}
+
+function gcommit
+{
+    desc=${1:-"Update"}
+    git commit -m $desc
+}
+
+function gpush
+{
+    desc=${1:-"Update"}
+    gadd && gcommit $desc && git push
+}
+
+alias gw="gh repo view --web"
+alias prw="gh pr view --web"
+
+alias prc="gh pr create --fill-verbose && prw"
+
+alias grc="gadd && gcommit 'Init' && gh repo create -s . -r origin --public --push && gw"
+alias grcp="git add . && git commit -m 'Init' && gh repo create -s . -r origin --private --push && gw"
+
+alias gpom="git pull origin master"
+alias gpmm="git merge --no-ff origin/master"
+
+alias gpoma="git pull origin main"
+alias gpmma="git merge --no-ff origin/main"
+
+###############################################################################
+################################### Git End ###################################
+###############################################################################
+
+
+
+##############################################################################
+################################ Python Start ################################
+##############################################################################
+
+alias py="python3"
+alias venv="source .venv/bin/activate"
+alias cvenv="py -m venv .venv && venv"
+alias pip="py -m pip"
+
+##############################################################################
+################################# Python End #################################
+##############################################################################
+
+alias stowf="~/dotfiles/stow.sh"
+alias zshrc="cd ~/dotfiles && vim && stowf && gpush && zsh -c 'clear'"
+
+source ~/.private/ssh.zsh
+
+function mkcd
+{
+  command mkdir $1 && cd $1
+}
