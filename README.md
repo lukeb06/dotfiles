@@ -1,26 +1,8 @@
-# Luke Barrier Dotfiles
+# My Dotfiles
 
 ## Prerequisites
 
-### MacOS
-
-```bash
-brew install stow
-```
-
-### Linux
-
-#### Debian
-
-```bash
-sudo apt-get install stow
-```
-
-#### Arch
-
-```bash
-sudo pacman -S stow
-```
+ > stow: `brew install stow` (or your preferred package manager)
 
 ## Install
 
