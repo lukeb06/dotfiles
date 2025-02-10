@@ -25,5 +25,5 @@ sudo pacman -S stow
 ## Install
 
 ```bash
-git clone https://github.com/lukebarrier/dotfiles ~/dotfiles --depth=1 && ~/dotfiles/stow.sh && zsh -c "clear"
+git clone https://github.com/lukeb06/dotfiles ~/dotfiles --depth=1 && ~/dotfiles/stow.sh && zsh -c "clear"
 ```
