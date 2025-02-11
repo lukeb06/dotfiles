@@ -9,8 +9,6 @@ function con
     mount_smbfs //$username:$password@$server/$share $mount_point
 }
 
-source ~/.zshconfig/private/con.zsh
-
 function cons
 {
     con $(get_settle_user) $(get_settle_password) "mainserver" "CPSQL.1" ~/CPSQL.1
