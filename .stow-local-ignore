@@ -3,3 +3,4 @@ README.md
 .jj
 stow.sh
 .gitignore
+.DS_Store
