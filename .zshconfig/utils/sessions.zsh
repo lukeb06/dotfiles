@@ -20,7 +20,7 @@ alias tmuxes='tmuxifier es'
 function fzf_sessions
 {
     previewer=${1:-"preview_session {}"}
-    tmuxls | fzf --preview="source ~/.zshutil && $previewer"
+    tmuxls | fzf --preview="$previewer"
 }
 
 alias fzf_sessions_config='fzf_sessions "preview_session_config {}"'
@@ -55,7 +55,7 @@ function slsfzf
     content1='[sesh]'
     content2=$(tmuxls)
 
-    echo "$content1\n$content2" | fzf --preview="source ~/.zshutil && preview_session {}"
+    echo "$content1\n$content2" | fzf --preview="preview_session {}"
 }
 
 function ss
