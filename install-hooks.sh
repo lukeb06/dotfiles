@@ -4,7 +4,7 @@ rm -rf .git/hooks
 mkdir -p .git/hooks
 
 for file in $(ls .hooks); do
-  echo "Hooking $file"
+  echo "Installing hook: $file"
   cp .hooks/$file .git/hooks/$file
   chmod +x .git/hooks/$file
 done
