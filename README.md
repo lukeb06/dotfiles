@@ -1,6 +1,6 @@
 # My Dotfiles
 
-## Prerequisites
+## Dependencies
 
 > [GNU Stow](https://www.gnu.org/software/stow/): `brew install stow` (or your preferred package manager)
 
