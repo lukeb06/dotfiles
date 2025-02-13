@@ -7,3 +7,5 @@ stow.sh
 .gitmodules
 brew.txt
 Brewfile
+brew-dump.sh
+brew-install.sh
