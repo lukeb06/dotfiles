@@ -2,8 +2,6 @@
 
 ## Dependencies
 
-> [GNU Stow](https://www.gnu.org/software/stow/): `brew install stow` (or your preferred package manager)
-
 > Oh My ZSH
 
 > Probably lots of other stuff but I'm too lazy to go through and figure out what all my dependencies are rn...
