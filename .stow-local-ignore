@@ -9,3 +9,4 @@ brew.txt
 Brewfile
 brew-dump.sh
 brew-install.sh
+.hooks
