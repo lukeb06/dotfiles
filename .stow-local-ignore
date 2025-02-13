@@ -5,3 +5,4 @@ stow.sh
 .gitignore
 .DS_Store
 .gitmodules
+brew.txt
