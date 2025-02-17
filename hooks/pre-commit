@@ -1,5 +1,4 @@
 #!/bin/sh
 
-echo "Running pre-commit hook"
 ./scripts/brew-dump.sh
 git add .
