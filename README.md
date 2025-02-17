@@ -9,5 +9,5 @@
 ## Install
 
 ```bash
-git clone https://github.com/lukeb06/dotfiles ~/dotfiles --depth=1 && ~/dotfiles/ci.sh
+git clone https://github.com/lukeb06/dotfiles ~/dotfiles --depth=1 && cd ~/dotfiles && ./ci.sh
 ```
