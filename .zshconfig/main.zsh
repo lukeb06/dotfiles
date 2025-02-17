@@ -9,7 +9,7 @@ source ~/.zshconfig/utils/shopify.zsh
 source ~/.zshconfig/utils/git.zsh
 source ~/.zshconfig/utils/python.zsh
 
-alias stowf="~/dotfiles/stow.sh"
+alias stowf="~/dotfiles/scripts/stow.sh"
 alias zshrc="cd ~/dotfiles && vim && stowf && gpush && zsh -c 'clear'"
 
 source ~/.zshconfig/private/ssh.zsh

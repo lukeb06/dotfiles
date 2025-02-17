@@ -12,3 +12,4 @@ brew-install.sh
 .hooks
 install-hooks.sh
 ci.s
+scripts
