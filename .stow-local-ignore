@@ -9,7 +9,7 @@ brew.txt
 Brewfile
 brew-dump.sh
 brew-install.sh
-.hooks
+hooks
 install-hooks.sh
 ci.s
 scripts
