@@ -1,11 +1,5 @@
 alias ls='ls --color'
 
-function cd
-{
-    builtin cd "$@"
-    echo "$(pwd | sed -e "s|^$HOME|~|")"
-}
-
 source ~/.zshconfig/private/con.zsh
 
 source ~/.zshconfig/utils/con.zsh
