@@ -9,5 +9,5 @@
 ## Install
 
 ```bash
-git clone --recurse-submodules -j8 https://github.com/lukeb06/dotfiles --depth=1 && cd ~/dotfiles && ./ci.sh
+git clone --recurse-submodules -j8 https://github.com/lukeb06/dotfiles ~/dotfiles --depth=1 && cd ~/dotfiles && ./ci.sh
 ```
