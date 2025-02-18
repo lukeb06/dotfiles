@@ -9,6 +9,8 @@ source ~/.zshconfig/utils/shopify.zsh
 source ~/.zshconfig/utils/git.zsh
 source ~/.zshconfig/utils/python.zsh
 
+source ~/.zshconfig/utils/battery.zsh
+
 alias stowf="~/dotfiles/scripts/stow.sh"
 alias zshrc="cd ~/dotfiles && vim && stowf && gpush && zsh -c 'clear'"
 
