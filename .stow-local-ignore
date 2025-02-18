@@ -11,5 +11,5 @@ brew-dump.sh
 brew-install.sh
 hooks
 install-hooks.sh
-ci.s
+ci.sh
 scripts
