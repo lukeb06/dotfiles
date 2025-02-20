@@ -12,7 +12,7 @@ source ~/.zshconfig/utils/python.zsh
 source ~/.zshconfig/utils/battery.zsh
 
 alias stowf="~/dotfiles/scripts/stow.sh"
-alias zshrc="cd ~/dotfiles && vim && stowf && gpush && zsh -c 'clear'"
+alias zshrc="cd ~/dotfiles && v && stowf && gpush && zsh -c 'clear'"
 
 source ~/.zshconfig/private/ssh.zsh
 
