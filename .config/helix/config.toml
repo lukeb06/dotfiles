@@ -1,0 +1,6 @@
+theme = "catppuccin_mocha"
+
+[editor]
+line-number = "relative"
+scrolloff = 12
+bufferline = "always"
