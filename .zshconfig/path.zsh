@@ -7,6 +7,8 @@ export NVM_DIR="/Users/lukebarrier/.nvm"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# tmuxifier
 export PATH="$HOME/.tmuxifier/bin:$PATH"
 
 export DYLD_FALLBACK_LIBRARY_PATH="$(brew --prefix)/lib:$DYLD_FALLBACK_LIBRARY_PATH"
