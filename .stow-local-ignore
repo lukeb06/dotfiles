@@ -5,11 +5,7 @@ stow.sh
 .gitignore
 .DS_Store
 .gitmodules
-brew.txt
 Brewfile
-brew-dump.sh
-brew-install.sh
 hooks
-install-hooks.sh
 ci.sh
 scripts

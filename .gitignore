@@ -1,8 +1,2 @@
 .zshconfig/private
 .DS_Store
-.config/karabiner
-.config/iterm2
-.config/gtk-2.0
-.config/neofetch
-.config/gh
-.config/raycast
