@@ -1,3 +1,0 @@
-# List of things I want to maybe do in the future with my config...
-
-- [x] switch to neo-tree
