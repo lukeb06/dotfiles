@@ -11,7 +11,7 @@ function con
 
 function cont
 {
-    mount_smbfs //lukeb@pc03-engineerin.local/ ~/PC03
+    mount_smbfs //lukeb@pc03-engineerin.TILEWARE.local/ ~/PC03
 }
 
 # function cons
