@@ -9,10 +9,10 @@ function con
     mount_smbfs //$username:$password@$server/$share $mount_point
 }
 
-function cont
-{
-    mount_smbfs //lukeb@pc03-engineerin.TILEWARE.local/ ~/PC03
-}
+# function cont
+# {
+#     mount_smbfs //PC03-ENGINEERIN\\lukeb@TILEWARE.local/ThermaltakeVP3000-Desktop ~/PC03
+# }
 
 # function cons
 # {
