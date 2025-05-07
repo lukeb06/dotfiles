@@ -9,8 +9,13 @@ function con
     mount_smbfs //$username:$password@$server/$share $mount_point
 }
 
-function cons
+function cont
 {
-    con $(get_settle_user) $(get_settle_password) "mainserver" "CPSQL.1" ~/CPSQL.1
-    con $(get_settle_user) $(get_settle_password) "mainserver" "Share" ~/Share
+    mount_smbfs //lukeb@pc03-engineerin.local/ ~/Desktop/PC03
 }
+
+# function cons
+# {
+#     con $(get_settle_user) $(get_settle_password) "mainserver" "CPSQL.1" ~/CPSQL.1
+#     con $(get_settle_user) $(get_settle_password) "mainserver" "Share" ~/Share
+# }
