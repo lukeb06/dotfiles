@@ -24,8 +24,6 @@
         enable = true;
         casks = [
             "ghostty"
-            "spotify"
-            "zen-browser"
             "wezterm"
         ];
       };
