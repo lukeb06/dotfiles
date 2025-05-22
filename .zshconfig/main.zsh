@@ -17,7 +17,7 @@ alias nixbuild="sudo darwin-rebuild switch --flake ~/.config/nix#air"
 # alias nixrc="cd ~/dotfiles/.config/nix && v && cd ~/dotfiles && stowf && sudo darwin-rebuild switch --flake ~/.config/nix#air && gpush && exec zsh"
 # alias vimrc="cd ~/.config/nvim && v && gpush"
 alias zshrc="cd ~/dotfiles && v && gpush && exec zsh"
-alias nixrc="cd ~/dotfiles/.config/nix && v && cd ~/dotfiles && gpush && nixbuild && exec zsh"
+alias nixrc="cd ~/.config/nix && v && cd ~/dotfiles && gpush && nixbuild && exec zsh"
 alias vimrc="cd ~/.config/nvim && v && gpush"
 alias nvimrc="vimrc"
 
