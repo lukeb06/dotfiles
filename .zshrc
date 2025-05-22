@@ -14,7 +14,7 @@ zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
 
-# autoload -U compinit && compinit
+autoload -U compinit && compinit
 
 HISTSIZE=5000
 HISTFILE=~/.zsh_history
