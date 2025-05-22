@@ -47,3 +47,5 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 source ~/.zshconfig/theme.zsh
 source ~/.zshconfig/path.zsh
+
+alias l="lsd -lah && pwd"
