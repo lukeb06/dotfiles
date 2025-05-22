@@ -17,6 +17,7 @@
         [
             pkgs.neovim
             pkgs.neofetch
+            pkgs.starship
         ];
 
       homebrew = {
