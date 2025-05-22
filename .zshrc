@@ -44,7 +44,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 eval "$(starship init zsh)"
 
-plugins=(git)
+# plugins=(git)
 
 # source $ZSH/oh-my-zsh.sh
 # source ~/.zshconfig/theme.zsh
