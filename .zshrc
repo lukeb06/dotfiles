@@ -46,7 +46,7 @@ eval "$(starship init zsh)"
 
 plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
+# source $ZSH/oh-my-zsh.sh
 # source ~/.zshconfig/theme.zsh
 source ~/.zshconfig/path.zsh
 
