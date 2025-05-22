@@ -40,13 +40,13 @@ eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
 # Path to your Oh My Zsh installation.
-# export ZSH="$HOME/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 eval "$(starship init zsh)"
 
 plugins=(git)
 
-# source $ZSH/oh-my-zsh.sh
+source $ZSH/oh-my-zsh.sh
 # source ~/.zshconfig/theme.zsh
 source ~/.zshconfig/path.zsh
 
