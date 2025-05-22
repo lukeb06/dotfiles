@@ -42,7 +42,7 @@ eval "$(zoxide init --cmd cd zsh)"
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 
 # plugins=(git)
 
