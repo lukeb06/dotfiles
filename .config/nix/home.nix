@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -43,6 +43,10 @@
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
+
+    # ".zshrc".source = ~/dotfiles/.zshrc;
+    ".config/kitty".source = "${inputs.self}/dotfiles/.config/kitty";
+
 
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
