@@ -9,3 +9,5 @@ Brewfile
 hooks
 ci.sh
 scripts
+
+.config/kitty
