@@ -44,8 +44,11 @@
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
 
-    # ".zshrc".source = ~/dotfiles/.zshrc;
+    ".zshrc".source = "${inputs.self}/../.zshrc";
     ".config/kitty".source = "${inputs.self}/../.config/kitty";
+    ".config/ghostty".source = "${inputs.self}/../.config/ghostty";
+    ".config/wezterm".source = "${inputs.self}/../.config/wezterm";
+    ".config/aerospace".source = "${inputs.self}/../.config/aerospace";
 
 
     # # You can also set the file content immediately.
