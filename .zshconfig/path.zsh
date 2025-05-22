@@ -2,7 +2,7 @@ export NVM_DIR="/Users/lukebarrier/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # bun completions
-[ -s "/Users/lukebarrier/.bun/_bun" ] && source "/Users/lukebarrier/.bun/_bun"
+# [ -s "/Users/lukebarrier/.bun/_bun" ] && source "/Users/lukebarrier/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
