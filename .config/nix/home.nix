@@ -45,7 +45,7 @@
     # ".screenrc".source = dotfiles/screenrc;
 
     # ".zshrc".source = ~/dotfiles/.zshrc;
-    ".config/kitty".source = "${inputs.self}/dotfiles/.config/kitty";
+    ".config/kitty".source = "${inputs.self}/../.config/kitty";
 
 
     # # You can also set the file content immediately.
