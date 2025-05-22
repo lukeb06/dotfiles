@@ -18,6 +18,7 @@
             pkgs.neovim
             pkgs.neofetch
             pkgs.starship
+            pkgs.cava
         ];
 
       homebrew = {
