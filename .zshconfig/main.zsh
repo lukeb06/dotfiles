@@ -17,4 +17,4 @@ function mkcd
   command mkdir $1 && cd $1
 }
 
-alias i="l && pwd"
+alias l="lsd -lah && pwd"
