@@ -26,6 +26,7 @@
             "ghostty"
             "spotify"
             "zen-browser"
+            "wezterm"
         ];
       };
 
